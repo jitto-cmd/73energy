@@ -1043,15 +1043,15 @@
         });
         
         // Form submission
-        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
-            e.preventDefault();
+       // document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+         //   e.preventDefault();
             
             // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
+          //  const formData = new FormData(this);
+           // const data = Object.fromEntries(formData);
             
             // Here you would normally send to a server
-            console.log('Form submitted:', data);
+          //  console.log('Form submitted:', data);
             
             // Show success message
             //alert('Thank you for your inquiry. Our team will contact you within 24 hours.');
@@ -1059,7 +1059,7 @@
             // Reset form and close modal
             //this.reset();
             //closeModal();
-        });
+    //    });
         
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
