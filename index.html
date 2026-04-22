@@ -995,7 +995,16 @@
                     <textarea id="message" name="message" required placeholder="Please describe your inquiry..."></textarea>
                 </div>
                 
-                <button type="submit" class="submit-btn">Submit Inquiry</button>
+                <div class="form-group" style="margin-bottom: 15px; font-size: 0.9rem;">
+        <label style="display: flex; align-items: flex-start; gap: 10px;">
+            <input type="checkbox" name="gdpr_consent" required style="margin-top: 4px;">
+            <span>
+                I agree to the <a href="privacy.html" target="_blank" style="color: #c5a059;">Privacy Policy</a> and consent to my data being processed for the purpose of handling this commercial inquiry.
+            </span>
+        </label>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit Inquiry</button>
             </form>
         </div>
     </div>
