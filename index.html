@@ -1084,5 +1084,27 @@
             });
         });
     </script>
+    <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #1a2a40; color: white; padding: 20px; text-align: center; z-index: 9999; display: none;">
+    <p style="margin: 0 0 10px 0; font-size: 1rem;">We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.</p>
+    <button id="accept-btn" style="padding: 10px 25px; background: #c5a059; border: none; color: white; cursor: pointer; border-radius: 4px; font-weight: bold;">Accept</button>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var banner = document.getElementById('cookie-banner');
+        var btn = document.getElementById('accept-btn');
+
+        // Check if user has already accepted
+        if (!localStorage.getItem('cookiesAccepted')) {
+            banner.style.display = 'block';
+        }
+
+        // Handle button click
+        btn.addEventListener('click', function() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            banner.style.display = 'none';
+        });
+    });
+</script>
 </body>
 </html>
