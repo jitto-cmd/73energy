@@ -1084,24 +1084,38 @@
             });
         });
     </script>
-    <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #002366; color: #ffffff; padding: 25px 20px; text-align: center; z-index: 9999; display: none; box-shadow: 0 -4px 15px rgba(0,0,0,0.3); border-top: 3px solid #c5a059;">
-    <p style="margin: 0 0 15px 0; font-size: 1.1rem; font-weight: 500;">We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.</p>
-    <button id="accept-btn" style="padding: 12px 40px; background: #c5a059; border: none; color: white; cursor: pointer; border-radius: 4px; font-weight: bold; font-size: 1rem; transition: background 0.3s;">Accept</button>
+   <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #002366; color: #ffffff; padding: 25px 20px; text-align: center; z-index: 9999; display: none; box-shadow: 0 -4px 15px rgba(0,0,0,0.3); border-top: 3px solid #c5a059;">
+    <p style="margin: 0 0 15px 0; font-size: 1rem;">
+        We use cookies to analyze site traffic and enhance your experience. 
+        Please choose your preference below. 
+        <a href="privacy.html" style="color: #c5a059; text-decoration: underline;">View Privacy Policy</a>
+    </p>
+    <div style="display: flex; justify-content: center; gap: 15px;">
+        <button id="decline-btn" style="padding: 10px 25px; background: transparent; border: 1px solid #c5a059; color: #ffffff; cursor: pointer; border-radius: 4px; font-weight: bold;">Decline All</button>
+        <button id="accept-btn" style="padding: 10px 25px; background: #c5a059; border: none; color: white; cursor: pointer; border-radius: 4px; font-weight: bold;">Accept All</button>
+    </div>
 </div>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var banner = document.getElementById('cookie-banner');
-        var btn = document.getElementById('accept-btn');
+        var acceptBtn = document.getElementById('accept-btn');
+        var declineBtn = document.getElementById('decline-btn');
 
-        // Check if user has already accepted
-        if (!localStorage.getItem('cookiesAccepted')) {
+        // Check if user has already made a choice
+        if (!localStorage.getItem('cookieConsent')) {
             banner.style.display = 'block';
         }
 
-        // Handle button click
-        btn.addEventListener('click', function() {
-            localStorage.setItem('cookiesAccepted', 'true');
+        // Accept All
+        acceptBtn.addEventListener('click', function() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            banner.style.display = 'none';
+        });
+
+        // Decline All (Essential only)
+        declineBtn.addEventListener('click', function() {
+            localStorage.setItem('cookieConsent', 'declined');
             banner.style.display = 'none';
         });
     });
