@@ -1117,16 +1117,26 @@
 document.addEventListener("DOMContentLoaded", function() {
     const banner = document.getElementById('cookie-banner');
     const acceptBtn = document.getElementById('accept-cookies');
+    const rejectBtn = document.getElementById('reject-cookies');
 
-    // Only show if the user hasn't clicked accept before
+    // Only show if the user hasn't made a choice yet
     if (!localStorage.getItem('cookieConsent')) {
         banner.style.display = 'block';
     }
 
-    // On click, save to local storage and hide
+    // Accept All
     acceptBtn.addEventListener('click', function() {
         localStorage.setItem('cookieConsent', 'true');
         banner.style.display = 'none';
+    });
+
+  <div id="cookie-banner" class="cookie-banner">
+    <p>We use cookies to ensure you get the best experience. Choose your preference:</p>
+    <div class="cookie-actions">
+        <button id="accept-cookies" class="cookie-btn">Accept All</button>
+        <button id="reject-cookies" class="cookie-btn reject-btn">Reject Optional</button>
+    </div>
+</div>
     });
 });
     </script>
