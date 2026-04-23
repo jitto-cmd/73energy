@@ -1113,33 +1113,39 @@
                 }
             });
         });
-    // GDPR Cookie Logic
+ // GDPR Cookie Logic
 document.addEventListener("DOMContentLoaded", function() {
     const banner = document.getElementById('cookie-banner');
     const acceptBtn = document.getElementById('accept-cookies');
     const rejectBtn = document.getElementById('reject-cookies');
 
-    // Only show if the user hasn't made a choice yet
     if (!localStorage.getItem('cookieConsent')) {
         banner.style.display = 'block';
     }
 
-    // Accept All
-    acceptBtn.addEventListener('click', function() {
-        localStorage.setItem('cookieConsent', 'true');
-        banner.style.display = 'none';
-    });
+    if (acceptBtn) {
+        acceptBtn.addEventListener('click', function() {
+            localStorage.setItem('cookieConsent', 'true');
+            banner.style.display = 'none';
+        });
+    }
 
-  <div id="cookie-banner" class="cookie-banner">
+    if (rejectBtn) {
+        rejectBtn.addEventListener('click', function() {
+            localStorage.setItem('cookieConsent', 'false');
+            banner.style.display = 'none';
+        });
+    }
+});
+</script>
+
+<div id="cookie-banner" class="cookie-banner" style="display:none;">
     <p>We use cookies to ensure you get the best experience. Choose your preference:</p>
     <div class="cookie-actions">
         <button id="accept-cookies" class="cookie-btn">Accept All</button>
         <button id="reject-cookies" class="cookie-btn reject-btn">Reject Optional</button>
     </div>
 </div>
-    });
-});
-    </script>
 <div id="cookie-banner" class="cookie-banner">
     <p>This website uses cookies to ensure you get the best experience. By continuing, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
     <button id="accept-cookies" class="cookie-btn">Accept</button>
