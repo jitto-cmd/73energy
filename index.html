@@ -388,28 +388,18 @@
             text-align: center;
         }
         
-.excellence-icon {
-    width: 80px;
-    height: 80px;
-    background: transparent;
-    border: 2px solid var(--navy);
-    color: var(--navy);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.5rem;
-    transition: all 0.3s;
-}
-
-.excellence-icon svg {
-    flex-shrink: 0;
-}
-
-.excellence-item:hover .excellence-icon {
-    background: var(--navy);
-    color: var(--white);
-}
+        .excellence-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--navy);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
         
         .excellence-item h3 {
             color: var(--navy);
@@ -728,11 +718,11 @@
             </a>
             <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="mandates.html">Trading Mandates</a></li>
-                <li><a href="index.html#excellence">Excellence</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#platforms">Platforms</a></li>
+                <li><a href="#excellence">Excellence</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -878,60 +868,42 @@
                 Built on four pillars of institutional-grade commodity trading
             </p>
             
-<div class="excellence-grid">
-    <div class="excellence-item">
-        <div class="excellence-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2L22 12L12 22L2 12Z"/>
-            </svg>
-        </div>
-        <h3>Maritime Logistics</h3>
-        <p>
-            Coordinated vessel chartering, port operations, and cargo management. 
-            End-to-end oversight ensuring on-time delivery across global trade routes.
-        </p>
-    </div>
-    
-    <div class="excellence-item">
-       <div class="excellence-icon">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="12" cy="12" r="8"/>
-    </svg>
-</div>
-        <h3>Structured Trade Finance</h3>
-        <p>
-            Institutional credit facilities enabling large-scale commodity transactions. 
-            LC-backed settlements and sophisticated working capital management.
-        </p>
-    </div>
-    
-    <div class="excellence-item">
-        <div class="excellence-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="4" y="4" width="16" height="16"/>
-            </svg>
-        </div>
-        <h3>Regulatory Compliance</h3>
-        <p>
-            Adherence to international commodity trading regulations and sanctions regimes. 
-            Rigorous KYC/AML protocols and environmental standards.
-        </p>
-    </div>
-    
-    <div class="excellence-item">
-        <div class="excellence-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2L22 20H2L12 2Z"/>
-            </svg>
-        </div>
-        <h3>Risk Management</h3>
-        <p>
-            Institutional hedging protocols and credit discipline. Vetted counterparty networks 
-            and comprehensive insurance coverage.
-        </p>
-    </div>
-</div>
-</div>
+            <div class="excellence-grid">
+                <div class="excellence-item">
+                    <div class="excellence-icon">⚓</div>
+                    <h3>Maritime Logistics</h3>
+                    <p>
+                        Coordinated vessel chartering, port operations, and cargo management. 
+                        End-to-end oversight ensuring on-time delivery across global trade routes.
+                    </p>
+                </div>
+                
+                <div class="excellence-item">
+                    <div class="excellence-icon">💰</div>
+                    <h3>Structured Trade Finance</h3>
+                    <p>
+                        Institutional credit facilities enabling large-scale commodity transactions. 
+                        LC-backed settlements and sophisticated working capital management.
+                    </p>
+                </div>
+                
+                <div class="excellence-item">
+                    <div class="excellence-icon">⚖️</div>
+                    <h3>Regulatory Compliance</h3>
+                    <p>
+                        Adherence to international commodity trading regulations and sanctions regimes. 
+                        Rigorous KYC/AML protocols and environmental standards.
+                    </p>
+                </div>
+                
+                <div class="excellence-item">
+                    <div class="excellence-icon">🛡️</div>
+                    <h3>Risk Management</h3>
+                    <p>
+                        Institutional hedging protocols and credit discipline. Vetted counterparty networks 
+                        and comprehensive insurance coverage.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -946,15 +918,15 @@
             
             <div class="contact-content">
                 <div class="contact-info">
-                    <p><strong>Email:</strong> <a href="mailto:commercial@73energy.com">commercial@73energy.com</a></p>
-                    <p><strong>Phone:</strong> <a href="tel:+447575436968">+44 7575 436968</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@73energy.com">info@73energy.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+442012345678">+44 20 1234 5678</a></p>
                     <p><strong>Location:</strong> London, United Kingdom</p>
                     
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/company/73-energy/?viewAsMember=true" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <a href="https://linkedin.com/company/73energy" target="_blank" class="social-icon" aria-label="LinkedIn">
                             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                         </a>
-                        <a href="mailto:commercial@73energy.com" class="social-icon" aria-label="Email">
+                        <a href="mailto:info@73energy.com" class="social-icon" aria-label="Email">
                             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                         </a>
                     </div>
@@ -972,14 +944,10 @@
                 73 Energy is a trading name of Mergershare Ltd, registered in England & Wales No. 14343247
             </p>
             <div class="footer-links">
-              <a href="#about">About</a>
-              <a href="#platforms">Platforms</a>
-              <a href="mandates.html">Trading Mandates</a>
-              <a href="#excellence">Operational Excellence</a>
-              <a href="governance.html">Governance</a>
-              <a href="#contact">Contact</a>
-              <a href="privacy.html">Privacy Policy</a> 
-              <a href="disclaimer.html">Disclaimer</a></div>
+                <a href="#about">About</a>
+                <a href="#platforms">Platforms</a>
+                <a href="#excellence">Operational Excellence</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </footer>
@@ -989,9 +957,7 @@
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal()">&times;</button>
             <h2 id="modalTitle">Commodity Inquiry</h2>
-            <form action="https://formsubmit.co/commercial@73energy.com" method="POST" id="inquiryForm">
-                <input type="hidden" name="_next" value="https://www.73energy.com/success.html">
-                <input type="hidden" name="_captcha" value="false">
+            <form id="inquiryForm">
                 <div class="form-group">
                     <label for="name">Full Name *</label>
                     <input type="text" id="name" name="name" required>
@@ -1025,16 +991,7 @@
                     <textarea id="message" name="message" required placeholder="Please describe your inquiry..."></textarea>
                 </div>
                 
-                <div class="form-group" style="margin-bottom: 15px; font-size: 0.9rem;">
-        <label style="display: flex; align-items: flex-start; gap: 10px;">
-            <input type="checkbox" name="gdpr_consent" required style="margin-top: 4px;">
-            <span>
-                I agree to the <a href="privacy.html" target="_blank" style="color: #c5a059;">Privacy Policy</a> and consent to my data being processed for the purpose of handling this commercial inquiry.
-            </span>
-        </label>
-    </div>
-
-    <button type="submit" class="submit-btn">Submit Inquiry</button>
+                <button type="submit" class="submit-btn">Submit Inquiry</button>
             </form>
         </div>
     </div>
@@ -1085,20 +1042,23 @@
         });
         
         // Form submission
-                           // Get form data
-          //  const formData = new FormData(this);
-           // const data = Object.fromEntries(formData);
+        document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
             
             // Here you would normally send to a server
-          //  console.log('Form submitted:', data);
+            console.log('Form submitted:', data);
             
             // Show success message
-            //alert('Thank you for your inquiry. Our team will contact you within 24 hours.');
+            alert('Thank you for your inquiry. Our team will contact you within 24 hours.');
             
             // Reset form and close modal
-            //this.reset();
-            //closeModal();
-    //    });
+            this.reset();
+            closeModal();
+        });
         
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1114,41 +1074,5 @@
             });
         });
     </script>
-   <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: #002366; color: #ffffff; padding: 25px 20px; text-align: center; z-index: 9999; display: none; box-shadow: 0 -4px 15px rgba(0,0,0,0.3); border-top: 3px solid #c5a059;">
-    <p style="margin: 0 0 15px 0; font-size: 1rem;">
-        We use cookies to analyze site traffic and enhance your experience. 
-        Please choose your preference below. 
-        <a href="privacy.html" style="color: #c5a059; text-decoration: underline;">View Privacy Policy</a>
-    </p>
-    <div style="display: flex; justify-content: center; gap: 15px;">
-        <button id="decline-btn" style="padding: 10px 25px; background: transparent; border: 1px solid #c5a059; color: #ffffff; cursor: pointer; border-radius: 4px; font-weight: bold;">Decline All</button>
-        <button id="accept-btn" style="padding: 10px 25px; background: #c5a059; border: none; color: white; cursor: pointer; border-radius: 4px; font-weight: bold;">Accept All</button>
-    </div>
-</div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var banner = document.getElementById('cookie-banner');
-        var acceptBtn = document.getElementById('accept-btn');
-        var declineBtn = document.getElementById('decline-btn');
-
-        // Check if user has already made a choice
-        if (!localStorage.getItem('cookieConsent')) {
-            banner.style.display = 'block';
-        }
-
-        // Accept All
-        acceptBtn.addEventListener('click', function() {
-            localStorage.setItem('cookieConsent', 'accepted');
-            banner.style.display = 'none';
-        });
-
-        // Decline All (Essential only)
-        declineBtn.addEventListener('click', function() {
-            localStorage.setItem('cookieConsent', 'declined');
-            banner.style.display = 'none';
-        });
-    });
-</script>
 </body>
 </html>
