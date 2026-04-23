@@ -1113,6 +1113,22 @@
                 }
             });
         });
+    // GDPR Cookie Logic
+document.addEventListener("DOMContentLoaded", function() {
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('accept-cookies');
+
+    // Only show if the user hasn't clicked accept before
+    if (!localStorage.getItem('cookieConsent')) {
+        banner.style.display = 'block';
+    }
+
+    // On click, save to local storage and hide
+    acceptBtn.addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'true');
+        banner.style.display = 'none';
+    });
+});
     </script>
 <div id="cookie-banner" class="cookie-banner">
     <p>This website uses cookies to ensure you get the best experience. By continuing, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
