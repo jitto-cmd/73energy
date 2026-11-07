@@ -184,7 +184,7 @@
             display: inline-block;
             margin-top: 2rem;
             padding: 15px 40px;
-            background: var(--bronze);
+            background: var(--bronze-dark);
             color: var(--white);
             text-decoration: none;
             font-weight: 600;
@@ -217,6 +217,10 @@
         
         .bg-light {
             background: var(--crisp-white);
+        }
+        
+        .bg-light .section-subtitle {
+            color: var(--dark-gray);
         }
         
         .section-title {
@@ -365,7 +369,7 @@
         .platform-btn {
             align-self: flex-start;
             padding: 10px 25px;
-            background: var(--bronze);
+            background: var(--bronze-dark);
             color: var(--white);
             border: none;
             border-radius: 4px;
@@ -376,7 +380,8 @@
         }
         
         .platform-btn:hover {
-            background: var(--bronze-dark);
+            background: var(--white);
+            color: var(--slate);
         }
         
         /* Excellence Section */
@@ -604,7 +609,7 @@
         .form-group textarea {
             width: 100%;
             padding: 12px;
-            border: 1px solid var(--light-gray);
+            border: 1px solid var(--gray);
             border-radius: 4px;
             font-family: inherit;
             font-size: 1rem;
@@ -734,13 +739,18 @@
 }
 
 .cookie-btn {
-    background: var(--bronze);
+    background: var(--bronze-dark);
     color: var(--white);
     border: none;
     padding: 8px 20px;
     margin-left: 15px;
     cursor: pointer;
     font-weight: bold;
+}
+
+.cookie-btn:hover {
+    background: var(--white);
+    color: var(--slate);
 }
 
 .cookie-banner a {
@@ -982,6 +992,9 @@
             <p>Principal-led commodity trading house | United Kingdom</p>
             <p style="margin-top: 1rem; font-size: 0.85rem;">
                 73 Energy is a trading name of Mergershare Ltd, registered in England & Wales No. 14343247
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.85rem;">
+                Registered Office: 182-184 High Street North, East Ham, London E6 2JA, United Kingdom
             </p>
             <div class="footer-links">
                 <a href="#about">About</a>
